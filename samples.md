@@ -6,144 +6,100 @@ Three original samples written for portfolio purposes. All content is educationa
 
 ## Sample A — X Thread: "What is a crypto wallet, really?"
 
-**1/** "Crypto wallet" is one of the most misleading names in this space.
+1/ First time I set up a crypto wallet, I kept looking for where the coins "were." Wrong question, as it turned out. Nothing is stored in that app. No coins in there at all — not hidden, not zipped away, nothing.
 
-Your coins are not in it. They were never in it.
+2/ Your bitcoin sits on the blockchain, which is less like a vault and more like a noticeboard in a town square that nobody can take down. One line pinned to it reads "address such-and-such owns 0.5 BTC." That line stays pinned there if your phone dies, gets stolen, ends up in a river. Whether you have the app installed is irrelevant to whether the line exists.
 
-Here's what a wallet actually does — in plain words. 🧵
+3/ So what's the app actually holding? A private key. That's it. One long string of characters — and whoever presents it gets to move the coins attached to that address. It's less a key, honestly, and more like the only signature the system will accept. Lose it and the coins stay up on the noticeboard forever, visible and untouchable, like money behind glass.
 
-**2/** First, where your crypto actually lives: on the blockchain.
+4/ The comparison that finally sorted it out for me was email, of all things. Your crypto address is the email address: shout it in public, print it on a t-shirt, it doesn't matter — that's how people send you things. The private key is the password to that inbox, except there is no "forgot password" link. There never will be. Password leaks, inbox is gone.
 
-The blockchain is a public record book that anyone can read. It says things like "address X holds 0.5 BTC." That record exists whether or not you have a wallet app.
+5/ During setup the wallet shows you 12 words (sometimes 24) — ordinary dictionary words, in a set order. That's the seed phrase: the key, translated into something a human can actually write down. New phone, fresh app, type the words in, you're back. Mine lives on paper, in an envelope, in a drawer. Old-fashioned on purpose.
 
-**3/** So what is the wallet?
+6/ Flip that around and it's grim. Those 12 words ARE the wallet, for anyone holding them. A thief needs nothing else — not your phone, not your face, not your fingerprint. Just the words. The wallet can be emptied in minutes, and there's no fraud department to ring, no transaction a bank can claw back. Gone is gone.
 
-It's a key holder. Specifically, it holds your **private key** — a secret code that proves the crypto recorded at your address belongs to you, and lets you spend it.
+7/ Two sorts of wallet, then. Hot ones live on your phone or in a browser: connected, quick, the equivalent of cash in your pocket for small day-to-day stuff. Cold ones are little hardware gadgets that stay offline in a drawer — slower, mildly annoying, and that is precisely why people trust them with amounts they'd lose sleep over. (I'm firmly in the second camp for anything serious.)
 
-No key, no spend. It's that simple.
+8/ You'll see "not your keys, not your coins" quoted constantly, usually at beginners. What it means: coins sitting on an exchange are controlled by the exchange's keys, not yours. You're a customer trusting a company, same arrangement as a bank, and it mostly works — until the day it doesn't. Hold the keys yourself and nobody can freeze you out. Also, nobody can rescue you. Every typo is final. Both halves of that matter.
 
-**4/** Think of it like email:
+9/ The whole thing in one breath: coins live on the blockchain; the wallet guards the key that can move them; your address is for receiving; the seed phrase is the spare copy of the key. The paranoia around 12 ordinary words exists because those words are, functionally, the money.
 
-- Your **public address** is your email address. Anyone can see it and send things to it.
-- Your **private key** is your password. Whoever has it controls the account.
-
-You share the address freely. You never share the key.
-
-**5/** When you first create a wallet, you get a **seed phrase** — usually 12 or 24 words.
-
-Those words are a human-readable backup of your private key. Lose your phone? The words restore your wallet on a new device.
-
-**6/** Which also means: anyone who finds those words owns your crypto.
-
-Not "can peek at it." Owns it. They can move everything, instantly, and there's no bank to call and no transaction to reverse.
-
-This is why every serious guide says: write the seed phrase on paper, never screenshot it, never type it into a website.
-
-**7/** Two main types of wallet:
-
-**Hot wallets** — apps on your phone or browser. Connected to the internet, convenient for small amounts and daily use.
-
-**Cold wallets** — hardware devices that keep keys offline. Slower, but far harder to steal from. Better for larger amounts.
-
-**8/** "Not your keys, not your coins" — you've probably seen this phrase.
-
-It refers to exchanges. When your crypto sits on an exchange, the exchange holds the keys. You're trusting them like a bank.
-
-A personal wallet means *you* hold the keys — and *you* carry the responsibility.
-
-**9/** Quick recap:
-
-- Crypto lives on the blockchain, not in your wallet
-- A wallet holds the private key that controls your crypto
-- Your seed phrase = your master backup. Guard it like cash
-- Hot wallet = convenience. Cold wallet = security
-- Anyone asking for your seed phrase is trying to rob you. No exceptions
-
-**10/** A wallet isn't a vault for coins. It's a key, an address, and a big responsibility — wrapped in a friendly app.
-
-Understand the key part, and 90% of wallet safety advice suddenly makes sense. 🔑
+10/ A wallet isn't a container. It's proof — proof that you're the one allowed to spend what's written next to your address. Once that lands, the standard advice (paper backups, hardware devices, never type your phrase into anything) stops sounding like overkill and starts sounding like the bare minimum.
 
 ---
 
 ## Sample B — Educational Article: "Bitcoin vs. Ethereum, in Plain Words"
 
-*~620 words. Audience: complete beginners.*
+*~800 words. Audience: complete beginners.*
 
-### Two networks, two different jobs
+# Bitcoin vs. Ethereum, in Plain Words
 
-Bitcoin and Ethereum are the two best-known names in crypto, and they're often mentioned in the same breath — as if they were two versions of the same thing. They're not. They were built for different jobs, and understanding that difference makes almost everything else about them easier to follow.
+Ask someone to name a cryptocurrency and you'll get "Bitcoin." Ask for a second one and, if they have it, it's Ethereum. Because the two get mentioned in the same breath so often, people assume they're rivals selling the same product, like two phone brands. They aren't, and the rivalry framing causes most of the confusion. One was built to be money. The other was built to run other people's programs. Keep that split in mind and the headlines start making sense.
 
-### Bitcoin: a ledger for money
+### Bitcoin: mostly just money, on purpose
 
-Bitcoin launched in 2009. Its job is narrow and deliberate: to be a digital form of money that no single company, bank, or government controls.
+It appeared in 2009 (nobody knows exactly who wrote it, which still amazes me) with a job description you could fit on an index card: money that works without a bank or a government standing behind it.
 
-The Bitcoin network is essentially a shared record book. It tracks who sent bitcoin to whom, and it does so in a way that makes the history very hard to rewrite. New bitcoin enters circulation through a process called mining, and the total supply is capped at 21 million — a rule written into the software from the start.
+Under the hood it's a ledger — a list of who paid whom — copied onto thousands of computers at once. That's why fiddling with old entries is a practical impossibility: you'd have to rewrite the list on most of those machines at the same time. New coins enter through mining, and they stop entering at 21 million. That ceiling isn't a promise some company made. It's in the code, and changing it would require the whole network to agree, which it won't.
 
-Because its purpose is focused, Bitcoin doesn't try to do much else. You can send it, receive it, and hold it. That simplicity is a feature: the fewer things a system does, the fewer things can break.
+And that's roughly all Bitcoin does. It doesn't run apps. It isn't trying to. I've come around to thinking the stubbornness is the point: a thing that does one job, in the open, for fifteen-plus years earns a kind of trust that feature lists can't.
 
-### Ethereum: a platform for programs
+### Ethereum: a computer with tenants
 
-Ethereum launched in 2015 with a broader ambition. Its native currency is called ether (ETH), but the network itself is better understood as a shared computer — a platform where anyone can deploy small programs called **smart contracts**.
+Ethereum showed up six years later with nearly the opposite instinct. Instead of doing one thing, it would be a machine that other people's things run on. It does have a currency, ether, and ether matters — you pay in it whenever the machine does work for you — but the currency is the fuel, not the machine.
 
-A smart contract is code that runs exactly as written when certain conditions are met. Think of a vending machine: insert the right payment, and the item drops — no cashier, no approval, no one who can change their mind mid-transaction. Smart contracts apply that idea to agreements: *if this happens, then that happens*, enforced by code instead of by a middleman.
+The programs are called smart contracts, a name I dislike, because they're neither smart nor really contracts. They're scripts. When the conditions written into one are met, it executes: no clerk, no approval queue, nobody able to quietly change their mind afterwards. The vending machine comparison gets used to death and I still haven't found a better one. Money in, condition met, item drops.
 
-This is why so much of Web3 is built on Ethereum or on networks modeled after it. Lending platforms, token exchanges, NFT marketplaces, and stablecoins are, under the hood, collections of smart contracts running on a network like Ethereum.
+Because anyone can publish these scripts, an entire ecosystem moved in. Lending markets. Exchanges with no company behind them. NFT shops, most of the stablecoin plumbing. All of it tenants renting space on the same shared computer.
 
-### A useful analogy
+### The shortcut version
 
-If Bitcoin is digital gold — a scarce asset people hold and transfer — Ethereum is more like the app store plus the phone it runs on: it has its own currency for paying fees, but its real purpose is to host applications other people build.
+Gold is the comparison Bitcoin always gets, and it survives for one reason: there's a fixed amount of it, and people mostly hold it rather than spend it. Ethereum's version of the comparison is a phone — not because the technology resembles one (it doesn't), but because a phone's value is the apps strangers built for it, and Ethereum's value works the same way. Money versus platform. If you remember nothing else from this page, that pairing is the bit worth remembering.
 
-The analogy isn't perfect (no analogy is), but it captures the core difference: **Bitcoin is primarily money. Ethereum is primarily a platform.**
+### What they've got in common
 
-### What they have in common
+Strip the differences away and the skeleton is the same. No company runs either network — there's no head office, no CEO doing interviews; the rules sit in open code that anyone can read and, frankly, few people do. Both write their history into blockchains: batches of transactions sealed into blocks and locked to the block before, so editing the past would show. And getting in needs nobody's permission. No forms, no credit check, no minimum deposit. A phone and an internet connection and you're a participant — which is either liberating or terrifying depending on the day.
 
-Both are **decentralized**: no single company runs them, and anyone can inspect the software and the transaction history. Both record transactions on a **blockchain** — a chain of blocks, each containing a batch of transactions, linked in order so the past can't be quietly edited. And both are **permissionless**: you don't need an account approval or a bank's permission to use them; you need a wallet and a connection.
+### Why any of this matters
 
-### Why the difference matters to a beginner
+Here's the practical payoff. Crypto news gets much easier to read once you sort it into two piles. Bitcoin pile: is it scarce, are people paying with it, hoarding it, treating it as savings? Ethereum pile: what got built, who's building, and why did it cost so much in fees to use yesterday? A headline that muddles the piles (they exist, daily) usually falls apart under that one question.
 
-When you read crypto news, ask one question: *is this about the money, or about the platform?*
+The risks deserve their own paragraph rather than a footnote. Both networks clog up and get expensive exactly when everyone rushes in at once. Prices do things that would get a stock suspended. Scams are not an edge case; they're an industry. And the classic beginner disaster — coins sent to a mistyped address — has no undo button and no support desk. None of this means "go buy some." It means go in with your eyes open, or don't go in.
 
-- A story about Bitcoin is usually about scarcity, payments, or storing value.
-- A story about Ethereum is usually about applications — what people are building, what it costs to use the network, and which programs are popular.
+### In short
 
-Both networks charge fees for transactions, both can be slow or expensive when busy, and both carry real risk — prices are volatile, scams are common, and mistakes (like sending to a wrong address) usually can't be undone. None of this is a reason to buy either asset; it's background knowledge that helps you read the space with clear eyes.
+If I had to leave it on a post-it: Bitcoin is money with a fixed supply and a short job description; Ethereum is a platform that rents out computing and charges in its own currency. Relatives, not twins.
 
-### The one-sentence summary
-
-Bitcoin is a decentralized money with a fixed supply; Ethereum is a decentralized platform for programmable applications that uses its own currency to run. Same family, different jobs.
-
-*This article is educational background only. It is not financial advice, and it does not recommend buying, selling, or holding any asset.*
+*This article is educational background only, not financial advice, and does not recommend buying, selling, or holding any asset.*
 
 ---
 
 ## Sample C — Standalone X Posts
 
-**Post 1 — Security**
+Post 1 — Security
 
-The #1 rule of crypto security fits in one sentence:
+Pin this somewhere. No support agent, no exchange, no wallet company will ever ask you for your seed phrase.
 
-No real support team, exchange, or wallet will ever ask for your seed phrase.
+Not the "agent" in your DMs with the company logo as his avatar. Not an email that looks identical to the real ones (they do — that's the point). Not a "verification" page — seed phrase verification doesn't exist.
 
-Not by DM. Not by email. Not on a "verification" page.
+The request itself is the scam. There's no legitimate version of it, no exception for official-looking accounts, none. The words go in a drawer. They never go in a chat box.
 
-If someone asks, it's a scam. Every time. No exceptions.
+***
 
-**Post 2 — Concepts**
+Post 2 — Concepts
 
-Stablecoins, in plain words:
+Stablecoins, without the jargon: tokens engineered to sit at one dollar and stay there. One token, one buck — that's the entire idea.
 
-They're crypto tokens designed to hold a steady value — usually 1 token = $1.
+People hold them to move money between exchanges without converting back to bank money each time, to sit out the wild price swings without leaving crypto, and to send value abroad in minutes instead of days.
 
-People use them to move money between platforms, park funds without leaving crypto, and get paid across borders.
+The part I'd underline: "engineered to" is not "guaranteed to." Some are backed by actual dollars in actual accounts. Some are backed by other crypto, and optimism. Check which kind you're holding before the amount gets big.
 
-"Designed to hold" is doing heavy lifting there — always check what's backing the one you use.
+***
 
-**Post 3 — How blockchains work**
+Post 3 — How blockchains work
 
-Why is it called a "blockchain"?
+The name "blockchain" isn't marketing. It's a description.
 
-Transactions are bundled into a block. Each block contains a fingerprint of the block before it, forming a chain.
+Transactions are bundled into a block. Before that block is accepted, it's stamped with the previous block's fingerprint — a hash: a long string of characters that changes completely if one letter of the earlier block changes. Block two carries block one's fingerprint, block three carries block two's, all the way back to the beginning.
 
-Change one old transaction, and every fingerprint after it breaks — which is how the network spots tampering.
-
-Simple idea. Hard to fake. That's the whole trick.
+So rewrite an old transaction and every fingerprint downstream breaks, loudly, on thousands of computers at once. It's less a lock than a room full of witnesses who all took notes.
